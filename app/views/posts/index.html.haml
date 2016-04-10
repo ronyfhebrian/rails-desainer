@@ -5,4 +5,12 @@
     = post.comments.count
     Komentar
 
+  %p
+    = post.get_upvotes.size
+    Likes
+
+  %p
+    = post.get_downvotes.size
+    Dislike
+
 = link_to "Post Baru", new_post_path
